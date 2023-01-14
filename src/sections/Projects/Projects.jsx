@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'; 
 import React from 'react';
 
+import GithubProjectCard from '../../components/GithubProjectCard'; 
+import '../../App.css';
+
 const Projects = () => {
 
 	// eslint-disable-next-line no-unused-vars
@@ -27,6 +30,7 @@ const Projects = () => {
           			edges {
             			node {
               				... on Repository {
+								id
                 				name
 								description
 								homepageUrl
@@ -58,12 +62,11 @@ const Projects = () => {
 			method: "POST", 
 			headers: headers, 
 			body: JSON.stringify({ query })
-		})
+		});
 
 		const data = await responce.json(); 
-
-		console.debug(data.data.user.pinnedItems);
 		
+		console.log(data.data.user.pinnedItems); 
 		setPinnedRepos(data.data.user.pinnedItems); 
 
 	}
@@ -71,9 +74,6 @@ const Projects = () => {
 	useEffect(() => {
 		getPinnedRepos(); 
 	}, [])
-
-	// Deconstructing the pinned repos 
-	// const totalRepos = pinnedRepos.totalCount; 
 	
 
 	return (
@@ -88,6 +88,26 @@ const Projects = () => {
 					</h4>
 
 					<div className="container d-flex flex-wrap justify-content-around">
+						{ 
+							// If this number is not equal to 0, it means that the object is not empty and the following code is executed:
+							Object.keys(pinnedRepos).length !== 0 && pinnedRepos.edges.map((repoNode) => {
+								// All details are stored within an object under the key node 
+								repoNode = repoNode.node;
+								// console.debug(repoNode);
+
+								// Returning a Project card for every repo in the responce from the API 
+								return (
+									<GithubProjectCard
+										key={repoNode.id}
+										projectTitle={repoNode.name}
+										description={repoNode.description}
+										url={repoNode.url}
+										homepageUrl={repoNode.homepageUrl}
+										primaryLanguage={repoNode.primaryLanguage}
+									/>
+								)
+							})
+						}
 
 
 					</div>

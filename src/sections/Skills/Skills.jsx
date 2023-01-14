@@ -10,7 +10,7 @@ import {
     SiJavascript,
     SiApple,
     SiVisualstudiocode  
-} from 'react-icons/si'
+} from 'react-icons/si';
 
 const Skills = () => {
   return (
@@ -18,28 +18,28 @@ const Skills = () => {
 
           <div className="card me-5 ms-5 text-bg-gray border border-light" style={{marginTop: "-5rem"}}>
               <div className="card-body p-4">
-                  <h4 className="card-title mb-4">
-                      <span className="text-gradient">Skills & Technologies</span>
-                  </h4>
+                  	<h4 className="card-title mb-4">
+                      	<span className="text-gradient">Skills & Technologies</span>
+                  	</h4>
 
-                  <div className="d-flex flex-wrap align-items-center justify-content-between me-4 ms-4" style={{fontSize: "2rem", color: "#b7bfc7"}}>
-                      <ul className="m-0 p-0">
+                  	<div className="d-flex flex-wrap align-items-center justify-content-between me-4 ms-4" style={{fontSize: "2rem", color: "#b7bfc7"}}>
+                      	<ul className="m-0 p-0">
                             <SiJava />
                             <SiPython />
                             <SiR />
-                      </ul>
+                      	</ul>
 
-                      <ul className="m-0 p-0">
+                      	<ul className="m-0 p-0">
                             <SiHtml5 />
                             <SiCss3 />
                             <SiJavascript />
-                      </ul>
+                      	</ul>
 
-                      <ul className="m-0 p-0">
+                      	<ul className="m-0 p-0">
                             <SiVisualstudiocode />
                             <SiApple style={{ marginBottom: "5px" }} />
-                      </ul>
-                  </div>
+                      	</ul>
+                  	</div>
 
                   <p className="card-text"></p>
               </div>
