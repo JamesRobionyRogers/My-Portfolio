@@ -1,0 +1,103 @@
+@import '../variables.scss'; 
+
+$cardBorderColor: #30363d; 
+$cardBackgroundColor: #161b22;
+
+.project-card {
+    background: $cardBackgroundColor; 
+    border: 1px solid $cardBorderColor;
+
+    max-width: 45%;
+    min-width: 45%;
+    transition: all 0.4s ease-in-out;
+
+    // Implenting a shadow for all the cards 
+    box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .github-icon { font-size: inherit;}
+
+    .card-title {
+        color: $mainTextColor;
+        
+        line-height: 1em;
+        font-size: 0.85em;
+        font-weight: 600; 
+    }
+
+    .prog-lang{
+        font-size: .6em;
+        padding: 0.1rem 0.2rem;
+        margin: 0 0.2rem;
+
+        border-radius: 3px;
+        border: 1px;
+    }
+
+    .card-text {
+        color: $secondaryTextColor;
+
+        font-size: 0.6em;
+        font-weight: 100;
+    }
+
+    .card-buttons {
+        margin-top: 1rem;
+        padding: 0;
+
+        display: flex;
+        flex: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 0.7em;
+        font-weight: 100;
+
+        // CHECK: .download-link is in the right space, may need to create a new file for general styles
+        .card-btn-link  {
+            color: $secondaryTextColor;
+    
+            border-radius: 3px;
+            border: none; 
+            padding: 0rem 0.2rem;
+    
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    
+                transform: scale(1.05);
+                font-weight: 600;
+            }
+
+            // CHECK: .download-link is in the right space, may need to create a new file for general styles
+            // .download-link:hover {
+            //     background: linear-gradient(90deg, #ff7170 2.34%, #ffe57f 100.78%);
+            //     -webkit-background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+    
+            //     font-weight: 600;
+            // }
+        }
+    }
+
+}
+
+// .project-card {
+//     max-width: 45%;
+//     min-width: 45%; 
+//     transition: all 0.4s ease-in-out;
+
+//     &:hover {
+//         transform: scale(1.05);
+//     }
+
+    
+// }

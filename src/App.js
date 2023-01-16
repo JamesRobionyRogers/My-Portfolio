@@ -1,4 +1,5 @@
-import './App.css';
+// import './App.scss';
+import './App.css'; 
 
 import Header from './sections/Header/Header.jsx'; 
 import Skills from './sections/Skills/Skills.jsx';

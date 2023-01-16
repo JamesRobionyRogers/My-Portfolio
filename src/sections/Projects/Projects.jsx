@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 
 import GithubProjectCard from '../../components/GithubProjectCard'; 
-import '../../App.css';
+// import '../../App.css';
+import './Projects.scss'; 
 
 const Projects = () => {
 
@@ -62,7 +63,7 @@ const Projects = () => {
 			method: "POST", 
 			headers: headers, 
 			body: JSON.stringify({ query })
-		});
+		})
 
 		const data = await responce.json(); 
 		

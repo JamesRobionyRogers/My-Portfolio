@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { 
     SiJava, 
     SiPython,
@@ -11,6 +10,8 @@ import {
     SiApple,
     SiVisualstudiocode  
 } from 'react-icons/si';
+
+import './Skills.scss';
 
 const Skills = () => {
   return (
