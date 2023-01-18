@@ -1,15 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import './Header.scss';
+
 import backgroundImg from '../../assets/Background-Img.png'; 
 import mimojiLaptop from '../../assets/Mimoji-Laptop.png'
 
-
+// TODO: Transfer all the CSS for the header into header.scss
 
 const Header = () => {
 
     return (
-        <div className="position-relative">
+        <div id="header" className="position-relative">
             <header className="p-3 position-absolute w-100 fixed-top" style={{ zIndex : 1 }}>
                 <div className="container">
                     <div className="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-between">
@@ -28,7 +30,7 @@ const Header = () => {
                 </div>
             </header>
 
-            <div className="container position-absolute ms-5" style={{ top: "10rem" }}>
+            <div className="header-text container position-absolute ms-5" style={{ top: "10rem" }}>
                 <h3>Hi, I'm James Robiony-Rogers <span className="typing"></span> </h3>
                 <p className="position-relative ms-3">I am an aspiring software developer</p>
 
@@ -40,11 +42,11 @@ const Header = () => {
                 </a>
             </div>
 
-            <div className="position-absolute memoji">
+            <div className="mimoji-container position-absolute memoji">
                 <img className="mimoji-img" src={mimojiLaptop} alt="" />
             </div>
 
-            <div className="position-relative" style={{ zIndex: -1 }}>
+            <div className="background-img position-relative">
                 <img className="img-fluid" src={backgroundImg} alt="" />
             </div>
 

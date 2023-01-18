@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+#header {
+
+    .header-text {
+        z-index: 2; 
+        color: $mainTextColor;
+
+    }
+
+    .mimoji-container {
+        z-index: 2; 
+    }
+
+    .background-img {
+        z-index: 0; 
+    }
+}
