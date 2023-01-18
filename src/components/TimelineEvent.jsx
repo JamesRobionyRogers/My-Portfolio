@@ -1,4 +1,6 @@
 import React from 'react';
+import { MdLocationPin } from 'react-icons/md';  // <MdLocationPin style={{ color: "red" }} />
+
 
 import './TimelineEvent.scss'; 
 
@@ -27,15 +29,16 @@ const TimelineEvent = (props) => {
     // We can then destructure firther
     const { icon, title, date, description, expandedDescription, location } = event; 
 
-    console.debug(event); 
+    console.debug(location); 
 
     return (
-        // TODO: Migrate the style and css file to scss
+        // TODO: Migrate the style and css file to scss 
+        // TODO: Rename class timeline-event below
         <div className="timeline ms-1" style={{ color: "white", paddingBottom: "2rem" }}>
             <div className="edu-highschool">
 
                 <div className="d-flex flex-wrap align-items-center justify-content-start" style={{ marginLeft: "-1.2rem" }}>
-                    <div className="edu-bubble d-flex flex-wrap align-items-center justify-content-around">
+                    <div className="icon-bubble d-flex flex-wrap align-items-center justify-content-around">
                         { 
                             // Running the icon as a function that returns the JSX component that was stored 
                             icon()
@@ -43,13 +46,24 @@ const TimelineEvent = (props) => {
                     </div>
 
                     <h5 className="p-3 ps-3 pt-4">{title}</h5>
+                    <div class="timeline-location position-absolute">
 
+                        {
+                            (location.length > 0) ? (
+                                <>
+                                    <MdLocationPin className="location-icon"/>
+                                    {location}
+                                </>
+                            ) : (<></>)
+                        }
+
+                    </div>
                     <span className="timeline-date position-absolute">{date}</span>
 
                 </div>
 
                 <p className="timeline-text">{description}</p>
-
+                
             </div>
 
         </div>

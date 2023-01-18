@@ -1,0 +1,58 @@
+.timeline {
+    border-left: solid #b7bfc7;
+    border-width: 3px;
+
+    .timeline-date {
+        color: #b7bfc7;
+
+        font-size: 0.7em;
+        font-weight: 300;
+
+        right: 5rem;
+    }
+
+    .timeline-location {
+        display: flex; 
+        align-items: center;
+
+        color: #b7bfc7;
+
+        font-size: 0.7em;
+        font-weight: 300;
+
+        padding-top: 8px;
+        left: 17rem;
+
+        .location-icon  {
+            color: #EA4335; 
+            margin-right: 0.3rem;
+        }
+    }
+
+    .timeline-text {
+        color: #b7bfc7;
+
+        font-size: 0.7em;
+        font-weight: 100;
+
+        margin: -1rem 3rem;
+
+    }
+
+    .icon-bubble {
+        border-radius: 50%;
+        background: #121212;
+        width: 2.4rem;
+        height: 2.4rem;
+
+        z-index: 1;
+    }
+
+    .read-more-btn {
+        cursor: pointer;
+        color: #b7bfc7;
+
+        font-size: 0.75em;
+        font-weight: 200;
+    }
+}
