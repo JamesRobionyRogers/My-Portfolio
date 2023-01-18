@@ -39,7 +39,7 @@ const GithubProjectCard = (props) => {
 					  	<a className="card-btn-link card-link" href={homepageUrl}>View Website</a>
 				  	) : (
 						// TODO: Add a loading repos component while awaitng api responce
-						<span></span>
+						<></>
 				  )
 				}
 				
