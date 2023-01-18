@@ -99,125 +99,11 @@ html p {
 	font-weight: 200;
 }
 
-/* html .card {
-	box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
-}
 
-html .card,
-.card-shadow {
-	box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 12px 11px 18px 0px rgba(0, 0, 0, 0.75);
-}
-
-html .project-card {
-	max-width: 45%;
-
-	transition: all 0.4s ease-in-out;
-}
-
-html .project-card:hover {
-	transform: scale(1.05);
-}
-
-html .card-title {
-	line-height: 1em;
-}
-
-.prog-lang {
-	font-size: .6em;
-	padding: 0.1rem 0.2rem;
-	margin: 0 0.2rem;
-
-	border-radius: 3px;
-	border: 1px;
-}
-
-.java {
-	background: rgba(176, 114, 25, 0.5);
-}
-
-.html {
-	background: rgba(227, 76, 38, 0.5);
-}
-
-.css {
-	background: rgba(86, 61, 124, 0.5);
-}
-
-.javascript {
-	background: rgba(240, 219, 79, 0.5);
-}
-
-.php {
-	background: rgba(79, 93, 149, 0.5);
-}
-
-.sql {
-	background: rgba(135, 135, 135, 0.5);
-}
-
-.python {
-	background: rgba(53, 114, 165, 0.5);
-}
-
-.web {
-	background: rgba(116, 68, 236, 0.5);
-}
-
-
-
-html .card-text {
-	color: #b7bfc7;
-
-	font-size: 0.7em;
-	font-weight: 100;
-}
-
-html .card-buttons {
-	margin-top: 1rem;
-	padding: 0;
-
-	display: flex;
-	flex: wrap;
-	align-items: center;
-	justify-content: space-between;
-
-	font-size: 0.7em;
-	font-weight: 100;
-}
-
-.card-btn-link,
-.download-link {
-	color: #b7bfc7;
-
-	border-radius: 3px;
-	padding: 0rem 0.2rem;
-
-	transition: all 0.2s ease-out;
-}
-
-.card-btn-link:hover {
-	background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-	font-weight: 600;
-}
-
-.download-link:hover {
-	background: linear-gradient(90deg, #ff7170 2.34%, #ffe57f 100.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-	font-weight: 600;
-} */
 
 /* Education */
 
-.timeline {
+/* .timeline {
 	border-left: solid #b7bfc7;
 	border-width: 3px;
 }
@@ -272,8 +158,7 @@ html .card-buttons {
 
 	font-size: 0.75em;
 	font-weight: 200;
-	/* display: block */
-}
+} */
 
 
 .github-icon {
