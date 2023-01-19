@@ -5,7 +5,7 @@ import { HiOutlineCode } from 'react-icons/hi';
 import './Experience.scss'; 
 import TimelineEvent from '../../components/TimelineEvent';
 
-// TODO: Inplement a better way of adding and removing from the timeline - CMS? 
+// TODO: Implement a better way of adding and removing from the timeline - CMS? 
 
 const experiences = [
 	{
@@ -14,7 +14,7 @@ const experiences = [
 		extendedDescription: "",
 		date: "2017 - 2021", 
 		location: "",
-		icon: () => <FaGraduationCap /> // "" // may want to do this by passing a component in as a prop 
+		icon: () => <FaGraduationCap />
 	},
 	{
 		title: "University of Otago",
@@ -22,7 +22,7 @@ const experiences = [
 		extendedDescription: "",
 		date: "2022 - 2024", 
 		location: "",
-		icon: () => <FaGraduationCap /> // "" // may want to do this by
+		icon: () => <FaGraduationCap />
 	},
 	{
 		title: "CodeCamp",
@@ -35,7 +35,10 @@ const experiences = [
 	{
 		title: "Seeking Experience Through an Internship", 
 		description: "Motivated to make the most of my summer break, I have been approaching Wellington based companies in the tech indestry to see if they would be willing to take me on as an intern.",
-		extendedDescription: "I am looking for a company that is willing to take me on for an internship ending mid February, as that is when I will be heading back to university. Looking back at the work I have done already, approaching people with regards to a job offer was something I was not comfortable with, but have consistantly put myseld out there and drastricly imporved my communication skills as a result.",
+		extendedDescription: [
+			"I am looking for a company that is willing to take me on for an internship ending mid February, as that is when I will be heading back to university.",
+			"Looking back at the work I have done already, approaching people with regards to a job offer was something I was not comfortable with, but have consistantly put myseld out there and drastricly imporved my communication skills as a result."
+		],
 		date: "Currently", 
 		location: "", 
 		icon: () => <FaRegIdBadge />
