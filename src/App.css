@@ -24,7 +24,7 @@ html .border-light {
 }
 
 
-.text-gradient {
+/* .text-gradient {
 	background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -34,7 +34,7 @@ html .border-light {
 	background: linear-gradient(90deg, #ff7170 2.34%, #ffe57f 100.78%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
+} */
 
 html .bg-gradient {
 	background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
