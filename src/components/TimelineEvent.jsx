@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdLocationPin } from 'react-icons/md';  // <MdLocationPin style={{ color: "red" }} />
 
-
+import ReadMore from '../components/ReadMore';
 import './TimelineEvent.scss'; 
 
 /**
@@ -20,16 +20,11 @@ import './TimelineEvent.scss';
  */
 const TimelineEvent = (props) => {
 
-    // Deconstructing the props into constants 
-    // const { icon, title, date, description, expandedDescription } = props;
-
     // The passed object looks like: { event: Object } so we must destructure it 
     const { event } = props;       
 
     // We can then destructure firther
-    const { icon, title, date, description, expandedDescription, location } = event; 
-
-    console.debug(location); 
+    const { icon, title, date, description, extendedDescription, location } = event; 
 
     return (
         // TODO: Migrate the style and css file to scss 
@@ -46,7 +41,7 @@ const TimelineEvent = (props) => {
                     </div>
 
                     <h5 className="p-3 ps-3 pt-4">{title}</h5>
-                    <div class="timeline-location position-absolute">
+                    <div className="timeline-location position-absolute">
 
                         {
                             (location.length > 0) ? (
@@ -62,7 +57,14 @@ const TimelineEvent = (props) => {
 
                 </div>
 
-                <p className="timeline-text">{description}</p>
+                <p className="timeline-text">
+                {description}
+                {   
+                    (extendedDescription.length > 0) ? ( 
+                        <ReadMore extendedDescription={extendedDescription} />
+                    ) : (<></>)
+                }
+                </p>
                 
             </div>
 

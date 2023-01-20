@@ -67,7 +67,7 @@ const Projects = () => {
 
 		const data = await responce.json(); 
 		
-		console.log(data.data.user.pinnedItems); 
+		// console.debug(data.data.user.pinnedItems);   // DEBUGGING:  Displaying result of query 
 		setPinnedRepos(data.data.user.pinnedItems); 
 
 	}
