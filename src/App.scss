@@ -7,3 +7,17 @@
 .App {
     background-color: $mainColor;
 }
+
+
+
+.text-gradient {
+    background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-orange {
+    background: linear-gradient(90deg, #ff7170 2.34%, #ffe57f 100.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
