@@ -5,6 +5,7 @@ import Header from './sections/Header/Header.jsx';
 import Skills from './sections/Skills/Skills.jsx';
 import Projects from './sections/Projects/Projects.jsx';
 import Experience from './sections/Experience/Experience';
+import PreviewCV from './sections/PreviewCV/PreviewCV';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 			<Skills />
 			<Projects /> 
 			<Experience /> 
+			<PreviewCV />
 		</div>
   	);
 }
