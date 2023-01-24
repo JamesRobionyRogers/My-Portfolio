@@ -42,7 +42,7 @@ html .bg-gradient {
 	/* -webkit-text-fill-color: transparent; */
 }
 
-.card-btn {
+/* .card-btn {
 	display: inline-block;
 
 	border: #fff solid 1px;
@@ -52,11 +52,10 @@ html .bg-gradient {
 }
 
 .card-btn:hover {
-	/* background: red;  */
 	background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
 
 	color: #fff !important;
-}
+} */
 
 div.sticky-links {
 	position: fixed;
@@ -161,10 +160,10 @@ html p {
 } */
 
 
-.github-icon {
+/* .github-icon {
 	font-size: 1.2em;
 	font-weight: 100;
-}
+} */
 
 
 /* .cv-preview {
