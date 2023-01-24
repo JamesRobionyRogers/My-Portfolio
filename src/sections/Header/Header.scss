@@ -3,8 +3,88 @@
 #header {
 
     .header-text {
-        z-index: 2; 
+        z-index: 2;
+
+        font-size: 2rem;
         color: $mainTextColor;
+
+        position: absolute;
+        top: 7rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+
+        .projects-link {
+            margin-top: 1rem;
+
+            font-size: 0.75rem;
+            font-weight: 500; 
+            text-decoration: none;
+
+            color: $secondaryTextColor;
+            
+            border : 1px solid $secondaryTextColor;
+            border-radius: 40px;
+            padding: 0.5rem 1rem;
+
+            
+            transition: background-image 0.3s ease-in-out;
+
+            &:hover {
+                background-image: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
+            }
+
+        }
+    }
+
+    .projects-link {
+        position: absolute;
+
+        bottom: 20%;
+        left: 7%;
+
+        z-index: 10; 
+
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0.25rem 0.1rem; 
+
+        border-radius: 40px;
+
+        color: $secondaryTextColor;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 20%;
+            height: 3px;
+            background-image: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
+            z-index: -1;
+            transition: width 0.9s cubic-bezier(0.33, 0.06, 0.11, 0.99);
+            // transform: scaleX(0);
+            // border-radius: 40px;
+        }
+
+        &:hover:before {
+            // transform: scaleX(1);
+            width: 100%;
+        }
 
     }
 
@@ -14,5 +94,6 @@
 
     .background-img {
         z-index: 0; 
+        filter: blur(1rem);
     }
 }

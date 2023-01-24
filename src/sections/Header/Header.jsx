@@ -1,4 +1,5 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './Header.scss';
@@ -30,17 +31,28 @@ const Header = () => {
                 </div>
             </header>
 
-            <div className="header-text container position-absolute ms-5" style={{ top: "10rem" }}>
-                <h3>Hi, I'm James Robiony-Rogers <span className="typing"></span> </h3>
-                <p className="position-relative ms-3">I am an aspiring software developer</p>
+            <div className="header-text container ms-5">
 
-                {/* <!-- Place a button like card, sith somethibg "check out my projects" href="#projects"--> */} 
-                <a href="#projects" style={{ color: "white" }}>
-                    <div className="card-btn ps-2 pe-2 pt-1 pb-1">
-                        <p className="mb-0 font-weight-bold">Check out my projects</p> { /* <!-- text-gradient */ }
-                    </div>
-                </a>
+                <p>Hello, my name is</p>
+                <h1> James Robiony-Rogers</h1>
+
+                <TypeAnimation
+                    sequence={[
+                        'I am an aspiring software developer', 3000,
+                        'I am a student studying Software Engineering', 3000,
+                        'I am a keen Mountain Biker', 1000,
+                        'I am a keen Mountain Biker and Hockey player', 3000
+                    ]}
+                    wrapper="p"
+                    cursor={true}
+                    repeat={Infinity}
+                    style={{ marginLeft: "0.5rem" }}
+                />
+
             </div>
+
+            <a className="projects-link" href="#projects">Explore Projects</a>
+
 
             <div className="mimoji-container position-absolute memoji">
                 <img className="mimoji-img" src={mimojiLaptop} alt="" />
