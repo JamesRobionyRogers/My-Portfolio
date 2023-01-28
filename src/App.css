@@ -57,7 +57,7 @@ html .bg-gradient {
 	color: #fff !important;
 } */
 
-div.sticky-links {
+/* div.sticky-links {
 	position: fixed;
 
 	border: solid 1px #b7bfc7;
@@ -86,7 +86,7 @@ div.sticky-links {
 
 html .sticky-link-linkedin:hover {
 	color: #00a0dc !important;
-}
+} */
 
 #skills i, #skills img, #skills svg {
 	margin: 0 0.5rem;
