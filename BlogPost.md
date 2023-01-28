@@ -31,6 +31,12 @@ The first step was to creare a perosnal access token on Github, allowing me to a
 
 Finally, I created a component to display the information of each of the repositories. The data was passed in through a series of props that was then deconstructed and passed into the vairous elements within the card. I chose to style each of these components seperately using SCSS. 
 
+## The Flaw with Publishing my Portfolio using Github Pages
+As development came firther towards a deployable version, I was researching some ways I would be able to publish my site for other people to see. For some of my previous projects I have used Github Pages, which is a very conveniant solution as you don't need to worry about sourcing a domain name or anything else. Github handles everything for you. 
+
+
+I came accross a an npm package called `gh-pages` that seemed to do exactly what I wanted. So I used npm to install it, ran the build command and went to go view my newly deployed pesonal portfolio... only to realise that it publishes static version of the site rendering my dynamic projects useless. I knew it was too good to be true.
+
 
 ## Conclusion
 Migrating my portfolio website from a static HTML website to a dynamic using React has been a great decision. Not only has it been a great learning experience but it has also made it  eaiser to upgrade and maintain in the future. I think implemnting Github's GraphQL API to display my pinned repositories was a great addition to my portfolio, allowing me to showcase my best work and make it easily accessable for visitors and eaiserly changed. 
