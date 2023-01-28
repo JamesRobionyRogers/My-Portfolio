@@ -13,10 +13,7 @@
 <br />
 <p align="center">
     <h1 align="center"> My Portfolio </h1>
-<<<<<<< Updated upstream
-=======
     <h6 align="center">January 2023</h6>
->>>>>>> Stashed changes
 
   <p align="center">
    My perosnal portfolio website to showcase my skills, experience and pervious projects. 
