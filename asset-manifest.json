@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.83fa3417.css",
+    "main.js": "/My-Portfolio/static/js/main.525284a2.js",
+    "static/media/Background-Img.png": "/My-Portfolio/static/media/Background-Img.cc1273af450504afe755.png",
+    "static/media/CV_JamesRobiony-Rogers.pdf": "/My-Portfolio/static/media/CV_JamesRobiony-Rogers.27072804f94f886e3d09.pdf",
+    "static/media/Mimoji-Laptop.png": "/My-Portfolio/static/media/Mimoji-Laptop.22bb55e1ebe4be3c5df3.png",
+    "static/media/CV_JamesRobiony-Rogers_Page2.pdf": "/My-Portfolio/static/media/CV_JamesRobiony-Rogers_Page2.b19c49072214876114db.pdf",
+    "static/media/CV_JamesRobiony-Rogers_Page1.pdf": "/My-Portfolio/static/media/CV_JamesRobiony-Rogers_Page1.c7f98e0ac1dc0bc2228a.pdf",
+    "static/media/CV_JamesRobiony-Rogers_Page3.pdf": "/My-Portfolio/static/media/CV_JamesRobiony-Rogers_Page3.d367fa2f778d20a6aefb.pdf",
+    "index.html": "/My-Portfolio/index.html",
+    "main.83fa3417.css.map": "/My-Portfolio/static/css/main.83fa3417.css.map",
+    "main.525284a2.js.map": "/My-Portfolio/static/js/main.525284a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83fa3417.css",
+    "static/js/main.525284a2.js"
+  ]
+}
