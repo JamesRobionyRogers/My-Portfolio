@@ -1,0 +1,45 @@
+
+.sticky-links {
+    position: fixed;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    border: solid 1px #b7bfc7;
+    border-radius: 1rem;
+
+    width: 3.5rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.4rem;
+    bottom: 1rem;
+    right: 1rem;
+
+    z-index: 5;
+
+    .sticky-link {
+        color: #fff;
+        text-decoration: none;
+
+        transition: all 0.2s ease-out;
+
+        .sticky-link-github {
+
+            margin-bottom: 1px;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 100% 200%;
+            background-image: linear-gradient(90deg, transparent, transparent);
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+
+                // background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100%);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
