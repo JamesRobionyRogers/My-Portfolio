@@ -49,7 +49,7 @@ I had previously made a [prototype static portfolio](https://github.com/JamesRob
 
 1. Clone the repo using Git
 ```sh
-git clone https://github.com/JamisBuggerlugs/Spaced-Repitition-Software-Website.git
+gh repo clone JamesRobionyRogers/My-Portfolio
 ```
 2. Run the app in developmet mode 
 ```sh
