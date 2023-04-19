@@ -67,11 +67,12 @@ npm start
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
-## Firther Development  
+## Further Development
 Throughout the project I have been tracking features and firther development using Jira. Here are some of the features I am yet to work on:
 
 - [ ] Implement animations using [Framer Motion](https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_) 
 - [ ] Use Dev.to API to display blog posts 
+- [ ] Migrate to Typescript - Here is a [blog post](https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/) to help
 
 
 
