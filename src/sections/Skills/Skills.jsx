@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
-    SiJava, 
+    // SiJava, 
     SiPython,
     SiR,
     SiHtml5,
@@ -10,6 +10,7 @@ import {
     SiApple,
     SiVisualstudiocode  
 } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
 
 import './Skills.scss';
 
@@ -25,7 +26,7 @@ const Skills = () => {
 
                   	<div className="d-flex flex-wrap align-items-center justify-content-between me-4 ms-4" style={{fontSize: "2rem", color: "#b7bfc7"}}>
                       	<ul className="m-0 p-0">
-                            <SiJava />
+                            <FaJava />
                             <SiPython />
                             <SiR />
                       	</ul>
