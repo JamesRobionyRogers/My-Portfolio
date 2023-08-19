@@ -16,7 +16,7 @@
     <h6 align="center">January 2023</h6>
 
   <p align="center">
-   My perosnal portfolio website to showcase my skills, experience and pervious projects. 
+   My personal portfolio website to showcase my skills, experience and pervious projects. 
   </p>
 </p>
 
