@@ -8,7 +8,21 @@
         font-size: 0.7em;
         font-weight: 300;
 
+        margin-top: 9px;
         right: 5rem;
+    }
+
+    .title-container {
+        display: flex; 
+        align-items: center;
+
+        .university-information {
+            margin-left: 3rem; 
+
+            span {
+                margin: 0 0.25rem; 
+            }
+        }
     }
 
     .timeline-location {
@@ -21,7 +35,7 @@
         font-weight: 300;
 
         padding-top: 8px;
-        left: 17rem;
+        margin: 0 0.5rem; 
 
         .location-icon  {
             color: #EA4335; 
@@ -33,7 +47,7 @@
         color: #b7bfc7;
 
         font-size: 0.7em;
-        font-weight: 100;
+        font-weight: 200;
 
         margin: -1rem 3rem;
 

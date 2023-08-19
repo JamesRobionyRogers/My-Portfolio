@@ -23,8 +23,8 @@ const TimelineEvent = (props) => {
     // The passed object looks like: { event: Object } so we must destructure it 
     const { event } = props;       
 
-    // We can then destructure firther
-    const { icon, title, date, description, extendedDescription, location } = event; 
+    // We can then destructure further
+    const { icon, title, date, description, extendedDescription, location, universityInfo } = event; 
 
     return (
         // TODO: Migrate the style and css file to scss 
@@ -40,27 +40,39 @@ const TimelineEvent = (props) => {
                         }
                     </div>
 
-                    <h5 className="p-3 ps-3 pt-4">{title}</h5>
-                    <div className="timeline-location position-absolute">
+                    <div className="title-container">
+                        <h5 className="p-3 ps-3 pt-4">{title}</h5>
+                        <div className="timeline-location">
 
-                        {
-                            (location.length > 0) ? (
-                                <>
-                                    <MdLocationPin className="location-icon"/>
-                                    {location}
-                                </>
-                            ) : (<></>)
-                        }
+                            {
+                                (location && location.length > 0) ? (
+                                    <>
+                                        <MdLocationPin className="location-icon"/>
+                                        {location}
+                                    </>
+                                ) : (<></>)
+                            }
 
+                        </div>
+                        <div className="university-information timeline-location">
+                            {
+                                (universityInfo) ? (
+                                    <>
+                                        <span className="gpa"><span style={{fontWeight: "600"}}>GPA:</span> {universityInfo.gpa}</span>
+                                        <span className="graduation-date"><span style={{fontWeight: "600"}}>Graduating:</span> {universityInfo.graduationDate}</span>
+                                    </>
+                                ) : (<></>)
+                            }
+                        </div>
+                        <span className="timeline-date position-absolute">{date}</span>
                     </div>
-                    <span className="timeline-date position-absolute">{date}</span>
 
                 </div>
 
                 <p className="timeline-text">
                 {description}
                 {   
-                    (extendedDescription.length > 0) ? ( 
+                    (extendedDescription && extendedDescription.length > 0) ? ( 
                         <ReadMore extendedDescription={extendedDescription} />
                     ) : (<></>)
                 }
